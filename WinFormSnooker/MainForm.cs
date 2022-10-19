@@ -249,5 +249,15 @@ namespace WinFormSnooker
         {
             TablazazatFeltoltFrissit();
         }
+
+        private void dgvVersenyzok_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            this.dgvVersenyzok.Sort(this.dgvVersenyzok.Columns[e.ColumnIndex], ListSortDirection.Ascending);
+        }
+
+        private void dgvVersenyzok_ColumnHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            this.dgvVersenyzok.Sort(this.dgvVersenyzok.Columns[e.ColumnIndex], ListSortDirection.Descending);
+        }
     }
 }

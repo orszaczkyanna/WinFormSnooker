@@ -61,6 +61,8 @@ namespace WinFormSnooker
             this.dgvVersenyzok.ReadOnly = true;
             this.dgvVersenyzok.Size = new System.Drawing.Size(669, 434);
             this.dgvVersenyzok.TabIndex = 9;
+            this.dgvVersenyzok.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvVersenyzok_ColumnHeaderMouseClick);
+            this.dgvVersenyzok.ColumnHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvVersenyzok_ColumnHeaderMouseDoubleClick);
             this.dgvVersenyzok.SelectionChanged += new System.EventHandler(this.dgvVersenyzok_SelectionChanged);
             // 
             // groupBox1
